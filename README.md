@@ -1,2 +1,2 @@
-# responsive random quotes app
+# Responsive random quotes app
  - Display Random Quotes on button click and tweet out 
