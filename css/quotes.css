@@ -20,21 +20,32 @@ body {
   color: white;
   font-family: 'Marck Script', cursive;
   font-size: 1.5em;
-  width: 43%;
+ width: 43%;
   margin-left: auto;
   margin-right: auto;
   height: auto;
   transition: all 2s;
 }
 
-h3 {
+h1{
+  width: 37%;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1%;
+  background-color: #FFA1FF;
+  color:black;
+  font-family: 'Marck Script';
+  margin-top: 5%;
+  font-size: 2.5em;
+  border-radius:5px;
+}
+h2 {
   width: 40%;
   margin-left:auto;
   margin-right:auto;
   padding-bottom:10px;
   color: #FFA1FF;
   font-family: 'Marck Script';
-  margin-top: 10%;
   font-size: 2.5em;
   border-bottom: 2px solid 
 }
