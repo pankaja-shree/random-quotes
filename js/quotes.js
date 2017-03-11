@@ -14,13 +14,15 @@ $(document).ready(function() {
   "I don't think Home's a place anymore.  I think it's a state of mind." ];
   var authors = ["Dream","Thessaly","Destruction","Dream","Orange Cat","Destruction","Lucifer","Joshua Norton I","Destruction","Barbie"];
  
- var quote;
+ var quote,author;
 
   $("#new").on('click', function() {
     
       randColor = colors[Math.floor(Math.random() * colors.length)];
       randindex = Math.floor(Math.random() * quotes.length);
-	  quote = quotes[randindex]
+	  quote = quotes[randindex];
+	  author = authors[randindex];
+	  
       var begin = '<i class="fa fa-quote-left" aria-hidden="true"></i> ';
 
       var end = ' <i class="fa fa-quote-right" aria-hidden="true"></i>';
@@ -44,7 +46,7 @@ $(document).ready(function() {
     });
 
 	$("#tweet").on('click', function() {
-    window.open("https:twitter.com/intent/tweet?text=" + quote);
+    window.open("https:twitter.com/intent/tweet?text=" + quote + '-' + author);
   });
 
   
