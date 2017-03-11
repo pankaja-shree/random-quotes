@@ -37,11 +37,12 @@ $(document).ready(function() {
       });
          $(".quotes").addClass("animated pulse").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
       $(this).removeClass('animated pulse');
-    });   
+    }); 
+	$("#tweet").on('click', function() {
+    window.open("https:twitter.com/intent/tweet?text=" + quotes[randIndex]);
+  });	
     });
 
 
-  $("#tweet").on('click', function() {
-    window.open("https:twitter.com/intent/tweet?text=" + quot);
-  });
+  
 });
