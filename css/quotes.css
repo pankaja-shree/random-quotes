@@ -103,6 +103,10 @@ footer {
 	  text-align: center;
 	  color: #FFA1FF;
 } 
+
+a{
+	text-decoration:none;
+}
 }
 
 @media all and (min-width: 700px) {
@@ -199,4 +203,7 @@ footer {
 	  text-align: center;
 	  color: #FFA1FF;
 } 
+a{
+	text-decoration:none;
+}
 }
