@@ -1,7 +1,9 @@
 $(document).ready(function() {
 
-  $(".quote").html('<i class="fa fa-quote-left" aria-hidden="true"></i> Never trust the storyteller. Only trust the story. <i class="fa fa-quote-right" aria-hidden="true"></i>');
-  $(".author").html("- Sandman");
+  var quote = 'Never trust the storyteller. Only trust the story. ';
+  var author = "Sandman";
+  $(".quote").html('<i class="fa fa-quote-left" aria-hidden="true"></i> '+quote+'<i class="fa fa-quote-right" aria-hidden="true"></i>');
+  $(".author").html(' - '+author);
   var colors = ["#00FFFF", "#FFFF00", "#FFA500", "#00FF00"];
   var randColor,randindex;
   var quotes = ["Things need not have happened to be true. Tales and dreams are the shadow-truths that will endure when mere facts are dust and ashes, and forgot.", 
@@ -14,7 +16,7 @@ $(document).ready(function() {
   "I don't think Home's a place anymore.  I think it's a state of mind." ];
   var authors = ["Dream","Thessaly","Destruction","Dream","Orange Cat","Destruction","Lucifer","Joshua Norton I","Destruction","Barbie"];
  
- var quote,author;
+ 
 
   $("#new").on('click', function() {
     
@@ -46,8 +48,9 @@ $(document).ready(function() {
     });
 
 	$("#tweet").on('click', function() {
-    window.open("https:twitter.com/intent/tweet?text=" + quote + '-' + author);
+    window.open("https:twitter.com/intent/tweet?text=" + quote + ' - ' + author);
   });
+  
 
   
 });
