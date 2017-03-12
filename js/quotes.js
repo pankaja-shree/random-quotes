@@ -51,7 +51,7 @@ $(document).ready(function() {
 		var tweet = $("#link");
 		var url = "https:twitter.com/intent/tweet?text=" + quote + ' - ' + author;
 		tweet.attr('href', url);
-    //window.open(url);
+    //window.open(url); can also be used 
   });
   
 
